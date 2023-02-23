@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Mobil Prack 2</string>
+    <string name="button1">Кнопка 1</string>
+    <string name="button2">Кнопка 2</string>
+    <string name="button3">Кнопка 3</string>
+    <string name="Text1">первый текст</string>
+    <string name="Text2">второй текст</string>
+    <string name="Text3">третий текст</string>
+
 </resources>
