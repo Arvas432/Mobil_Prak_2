@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="354dp"
         android:layout_marginBottom="369dp"
@@ -16,12 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/FirstActivitytextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Text1" />
 
         <EditText
             android:id="@+id/FirstActivityEditText"
@@ -36,8 +31,8 @@
             android:id="@+id/FirstActivitybutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button1"
-            android:onClick="OnClick"/>
+            android:onClick="OnClick"
+            android:text="@string/button1" />
 
         <ImageView
             android:id="@+id/FirstActivityimageView"
@@ -46,5 +41,15 @@
             app:srcCompat="@drawable/floppa_icon" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/FirstActivitytextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Text1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

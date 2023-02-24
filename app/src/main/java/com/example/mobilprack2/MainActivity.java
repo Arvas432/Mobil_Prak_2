@@ -1,7 +1,12 @@
 package com.example.mobilprack2;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaCodec;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,15 +27,29 @@ public class MainActivity extends AppCompatActivity  {
         FirstActivityTextView = (TextView)findViewById(R.id.FirstActivitytextView);
         FirstActivityImageView = (ImageView)findViewById(R.id.FirstActivityimageView);
 
+        Intent intent = new Intent(this, AirportActivity.class);
+        intent.putExtra("name",FirstActivityEditText.getText());
+
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
                 Log.i(TAG, "Button pressed!");
+                mStartForResult.launch(intent);
+
             }
         };
         FirstActivitybutton.setOnClickListener(listener);
     }
+    ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>()
+    {
+        @Override
+        public void onActivityResult(ActivityResult result)
+        {
+            FirstActivityTextView.setText(result.getData().getStringExtra("name"));
+
+        }
+    });
     public MainActivity() {
 
     }
