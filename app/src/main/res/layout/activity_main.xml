@@ -18,13 +18,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/FirstActivitytextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Text1" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/FirstActivityEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -33,13 +33,13 @@
             android:text="Test text" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/FirstActivitybutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button1" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/FirstActivityimageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/floppa_icon" />
