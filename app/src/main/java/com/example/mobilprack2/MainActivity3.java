@@ -19,4 +19,5 @@ public class MainActivity3 extends AppCompatActivity {
     TextView ThirdActivityTextView = (TextView) findViewById(R.id.ThirdActivitytextView2);
     ImageView ThirdActivityImageView = (ImageView) findViewById(R.id.ThirdActivityimageView);
     Button ThirdActivityButton = (Button) findViewById(R.id.ThirdActivitybutton4);
+    
 }
