@@ -12,6 +12,7 @@
     <color name="layout3">#c25121</color>
     <color name="body_background_grey">#f0f0f0</color>
     <color name="btn_background_grey">#e0e0e0</color>
+    <color name="button_color">#4245f5</color>
     <color name="btn_color_grey">#666666</color>
     <color name="blue_500">#006699</color>
 </resources>

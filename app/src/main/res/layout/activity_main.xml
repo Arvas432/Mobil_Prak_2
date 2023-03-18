@@ -24,21 +24,18 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Test text" />
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/FirstActivitybutton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="OnClick"
-            android:text="@string/button1" />
+            android:layout_height="@dimen/ButtonHeight"
+             />
 
         <ImageView
             android:id="@+id/FirstActivityimageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/floppa_icon" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
@@ -46,7 +43,7 @@
         android:id="@+id/FirstActivitytextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Text1"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0"

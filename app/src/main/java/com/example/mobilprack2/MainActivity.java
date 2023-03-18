@@ -23,13 +23,16 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FirstActivitybutton = (Button)findViewById(R.id.FirstActivitybutton);
+        FirstActivitybutton.setText(R.string.button1);
         FirstActivityEditText = (EditText)findViewById(R.id.FirstActivityEditText);
+        FirstActivityEditText.setText(R.string.Edittext_Text);
         FirstActivityTextView = (TextView)findViewById(R.id.FirstActivitytextView);
+        FirstActivityTextView.setText(R.string.Text1);
         FirstActivityImageView = (ImageView)findViewById(R.id.FirstActivityimageView);
+        FirstActivityImageView.setImageResource(R.drawable.floppa_icon);
 
         Intent intent = new Intent(this, AirportActivity.class);
         intent.putExtra("name",FirstActivityEditText.getText());
-
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v)

@@ -28,13 +28,14 @@ public class AirportActivity extends AppCompatActivity {
         Bundle arguments = getIntent().getExtras();
         String name = arguments.get("name").toString();
         ImageButton selectButton = findViewById(R.id.btn_menu_more);
-        TextView text = findViewById(R.id.textView);
+        TextView text = findViewById(R.id.textView1);
+        TextView bodytext = findViewById(R.id.textView);
         text.setText(name);
         selectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.putExtra("name", text.getText());
+                intent.putExtra("name", bodytext.getText());
                 setResult(RESULT_OK, intent);
                 finish();
 
