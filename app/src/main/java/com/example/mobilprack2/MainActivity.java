@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity  {
         FirstActivityTextView.setText(R.string.Text1);
         FirstActivityImageView = (ImageView)findViewById(R.id.FirstActivityimageView);
         FirstActivityImageView.setImageResource(R.drawable.floppa_icon);
+        FirstActivityResultButton = (Button)findViewById(R.id.FirstActivityButtonForResult);
+        FirstActivityResultButton.setText(R.string.button2foreresult);
 
         Intent intent = new Intent(this, AirportActivity.class);
         intent.putExtra("name",FirstActivityEditText.getText());
@@ -38,10 +40,16 @@ public class MainActivity extends AppCompatActivity  {
             public void onClick(View v)
             {
                 Log.i(TAG, "Button pressed!");
-                mStartForResult.launch(intent);
-
+                startActivity(intent);
             }
         };
+        FirstActivityResultButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mStartForResult.launch(intent);
+            }
+        });
         FirstActivitybutton.setOnClickListener(listener);
     }
     ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>()
@@ -62,6 +70,7 @@ public class MainActivity extends AppCompatActivity  {
     private EditText FirstActivityEditText;
     private TextView FirstActivityTextView;
     private ImageView FirstActivityImageView;
+    private Button FirstActivityResultButton;
 
 
 

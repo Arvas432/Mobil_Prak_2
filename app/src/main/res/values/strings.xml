@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Mobil Prack 2</string>
-    <string name="button1">Запустить Airport Activity</string>
+    <string name="button1">Запустить Airport Activity с передачей данных</string>
+    <string name ="button2foreresult">Запустить Airport Activity for result</string>
     <string name="button2">Кнопка 2</string>
     <string name="button3">Кнопка 3</string>
     <string name="Text1">первый текст</string>

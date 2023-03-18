@@ -31,11 +31,16 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/ButtonHeight"
              />
+        <Button
+            android:id="@+id/FirstActivityButtonForResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/FirstActivityimageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="186dp" />
+
 
     </LinearLayout>
 
